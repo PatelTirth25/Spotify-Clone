@@ -1,0 +1,28 @@
+.flex{
+    display: flex;
+}
+
+.border{
+    border: 1.5px solid rgb(244, 242, 242);
+}
+
+.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.greybg{
+    background-color: #121212;
+}
+
+.blackbg{
+    background-color: black;
+}
+
+.radius{
+    border-radius: 15px;
+}

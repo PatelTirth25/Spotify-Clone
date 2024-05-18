@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.left{
+    width: 25%;
+}
+.right{
+    width: 73%;
+    height: 90vh;
+}
+
+.logo li{
+    align-items: center;
+    margin: 15px;
+}
+
+.right{
+    margin: 19px 0 0 8px;
+    position: relative;
+    background-color: rgba(30,30,30,1);
+}
+
+.left{
+    margin: 5px;
+}
+
+.leftbottom{
+    height: 58vh;
+}
+
+.folderlist{
+    overflow-y: scroll;
+    height: 230px;
+}
+
+.folders{
+    height: 30px;
+    padding: 9px 0 0px 15px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.lefttop ul li{
+    padding: 4px;
+
+}
+
+.lefttop ul li:nth-child(1) img:nth-child(2){
+    display: none;
+}
+
+.logo li:nth-child(2){
+    gap: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+.logo li:nth-child(3){
+    gap: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.library ul{
+    justify-content: space-between; 
+    list-style-type: none;
+    padding: 10px;
+}
+
+.library ul li:nth-child(1){
+    gap: 15px;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.nav{
+    justify-content: space-between;
+    padding: 10px 13px;
+}
+
+.goodday{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.choice{
+    padding-left: 30px;
+    padding-top: 4px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.cards{
+    flex-direction: column;
+    margin-top: 40px;
+    width: 80%;
+    margin-left: 7.3vw;
+    overflow-y: scroll;
+    height: 55%;
+}
+
+.cards > div{
+    margin: 6px;
+    padding: 3px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.playbar{
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 5px;
+    right: 1.825vw;
+    z-index: 5;
+    background-color: rgba(146,146,146,1);
+    width: 95%;
+}
+
+.info{
+    justify-content: space-between;
+    margin: 5px 7px 0px 12px;
+}
+
+.songname{
+    color: black;
+}
+
+.time{
+    color: black;
+}
+
+.seekbar{
+    height: 6px;
+    width: 95%;
+    border-radius: 4px;
+    background-color: rgba(26, 26, 26, 0.625);
+    margin-top: 15px;
+    margin-left: 1.7vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.circle{
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: -2px;
+    transition: left 0.3s cubic-bezier(0.4, 0, 1, 1);
+    left: 0%;
+}
+
+.toandfro img:first-child{
+    display: none;
+}
+
+@media (max-width: 840px) {
+    .main{
+        position: relative;
+    }
+    .left{
+        position: absolute;
+        left: -130%;
+        background-color: black;
+        top: 3%px;
+        width: 75vw;
+        height: 95vh;
+        z-index: 15;
+        transition: left 0.5s ease-in-out;
+    }
+
+    .right{
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .toandfro img:first-child{
+        display: inline;
+    }
+
+    .goodday{
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .toandfro img{
+        width: 15px;
+    }
+    
+    .playbar{
+        height: 100px;
+    }
+
+    .info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .seekbar{
+        margin-top: 10px;
+    }
+    
+    .cards{
+        height: 45%;
+    }
+
+    .lefttop ul li:nth-child(1){
+        justify-content: space-between;
+    }
+
+    .lefttop ul li:nth-child(1) img:nth-child(2){
+        display: block;
+    }
+}
